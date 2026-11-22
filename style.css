@@ -1,0 +1,275 @@
+/* Basic reset & font */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.85),
+        rgba(255, 255, 255, 0.85)
+      ),
+      url('https://imgs.search.brave.com/kaWau7GEShgkF7XsbGuehXA-NcCeambtTFXGC8jD0RY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vaUU4NXdE/TGJXWHU1UE5Nb01E/TzVpLS1mQWlOVl9Q/b2kxaExDVVFDSkx5/US9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk1U/SXkvTURVNE5EUXpN/UzkyWldOMC9iM0l2/Wm05dlpDMWhibVF0/L1kyOXZhMmx1Wnkx/elpXRnQvYkdWemN5/MXdZWFIwWlhKdS9M/V1J2YjJSc1pYTXVh/bkJuL1AzTTlOakV5/ZURZeE1pWjMvUFRB/bWF6MHlNQ1pqUFMx/ai9TRzE1WjJ3NWMw/MVNXREZIL01VTkJj/amwyVVZOSU9ISjQv/VFd4U1JEY3RSalZV/UVZOai9jRWxWV1dj/OQ') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Sticky Navbar */
+  .sticky-nav {
+    background: #2e1a0f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+  }
+  /* Navbar */
+.sticky-nav {
+    background: #1e1e1e; /* Dark, elegant */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+  }
+  .navbar {
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+  }
+  .navbar li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.4rem 0.7rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  .navbar li a:hover,
+  .navbar li a.active {
+    background: #333;
+    color: #ffb84d;
+    box-shadow: 0 0 6px rgba(255, 184, 77, 0.6);
+  }
+  
+  
+  /* Hero Section */
+  .hero {
+    flex-grow: 1;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 140, 66, 0.85),
+        rgba(255, 60, 0, 0.85)
+      ),
+      url('images/hero-food.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 1rem;
+    text-align: center;
+    flex-direction: column;
+  }
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 5px #7a4100;
+  }
+  .tagline {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    text-shadow: 1px 1px 3px #7a4100;
+  }
+  .btn-primary {
+    background: linear-gradient(90deg, #ff8c42, #ff3c00);
+    color: #fff;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .btn-primary:hover {
+    background: #ffd580;
+    color: #7a3e00;
+  }
+  
+  /* Intro Section */
+  .intro {
+    padding: 3rem 0;
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Menu Section */
+  .menu-section {
+    padding: 3rem 0;
+  }
+  .menu-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff3c00;
+    font-weight: 700;
+  }
+  .menu-items {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .menu-card {
+    background: linear-gradient(to bottom, #fff7e6, #ffe7c4);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(255, 140, 66, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  .menu-card:hover {
+    transform: scale(1.05);
+  }
+  .menu-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  .menu-card h3 {
+    color: #ff3c00;
+    margin-bottom: 0.5rem;
+  }
+  .price {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #c94e00;
+    margin-top: auto;
+  }
+  .badge {
+    background: #3a2f1c;
+    color: #ff8c42;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    margin-left: 0.5rem;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 3rem 0;
+  }
+  .testimonials h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff3c00;
+    font-weight: 700;
+  }
+  .testimonial-card {
+    background: linear-gradient(to right, #ffe7c4, #fff2d6);
+    margin: 1rem auto;
+    padding: 1.5rem;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(255, 140, 66, 0.3);
+    font-style: italic;
+    color: #7a4a00;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+  }
+  .testimonial-card:hover {
+    box-shadow: 0 6px 16px rgba(255, 140, 66, 0.6);
+  }
+  .testimonial-card h4 {
+    margin-top: 1rem;
+    text-align: right;
+    font-weight: 700;
+    color: #ff3c00;
+  }
+  
+  /* Footer */
+  footer {
+    background: #130e05;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: inset 0 1px 4px rgba(255, 255, 255, 0.4);
+  }
+  .location-section {
+    background: linear-gradient(to right, #fff7e6, #ffe4cc);
+    padding: 3rem 0;
+    color: #4d2600;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #d35400;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  .location-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .location-text {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 1rem;
+  }
+  .location-map {
+    flex: 1.5;
+    min-width: 300px;
+  }
+  @media (max-width: 768px) {
+    .location-info {
+      flex-direction: column;
+    }
+  }
+    
