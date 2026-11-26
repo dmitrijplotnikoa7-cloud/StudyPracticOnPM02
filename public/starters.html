@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Закуски — Restro'Heaven</title>
+  <script src="auth.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="sticky-nav">
+    <div class="container nav-container">
+      <h1 class="logo">Restro'Heaven</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="starters.html" class="active">Закуски</a></li>
+          <li><a href="main-course.html">Основные блюда</a></li>
+          <li><a href="desserts.html">Десерты</a></li>
+          <li><a href="testimonials.html">Отзывы</a></li>
+        </ul>
+      </nav>
+      <button class="cart-btn" aria-label="Корзина">🛒 <span class="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <section class="menu-section container">
+    <h2>Закуски</h2>
+    <div class="menu-items">
+
+      <article class="menu-card">
+        <img src="https://imgs.search.brave.com/oETVSGs6aTx24aI-fX4wIa_D5A5CXQzYOeIo6uWn70I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vVEJCNl9p/djlmMjR6ZXJzZ0Y4/U19XY0xHUWRfNzhR/VGZldUNpcTVmeVdC/QS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlw/TG5CcC9ibWx0Wnk1/amIyMHZiM0pwL1oy/bHVZV3h6TDJReUx6/STEvTDJOa0wyUXlN/alZqWkdRMi9OMlJq/TVRReE5qVm1OREUy/L04yVmpORGswWkda/a1pEZzIvTG1wd1p3" alt="Хрустящие спринг-роллы" />
+        <h3>Хрустящие спринг-роллы <span class="badge">Выбор шефа</span></h3>
+        <p>Золотистые хрустящие спринг-роллы, подаются с пикантным сладко-острым соусом чили.</p>
+        <p class="price">₹150</p>
+        <button class="add-btn" data-name="Хрустящие спринг-роллы" data-price="150" data-img="https://imgs.search.brave.com/oETVSGs6aTx24aI-fX4wIa_D5A5CXQzYOeIo6uWn70I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vVEJCNl9p/djlmMjR6ZXJzZ0Y4/U19XY0xHUWRfNzhR/VGZldUNpcTVmeVdC/QS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlw/TG5CcC9ibWx0Wnk1/amIyMHZiM0pwL1oy/bHVZV3h6TDJReUx6/STEvTDJOa0wyUXlN/alZqWkdRMi9OMlJq/TVRReE5qVm1OREUy/L04yVmpORGswWkda/a1pEZzIvTG1wd1p3">Добавить в корзину</button>
+      </article>
+
+      <article class="menu-card">
+        <img src="https://imgs.search.brave.com/4Ix9fBJY6F4Vp6m7t3LHKVx9xIGzfGJe8av_tenBaDs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vRTNTd1Jf/VVVUQjlxdUtwSDB4/aUVwYTdZUXd6U2FM/R2ZUZmVsVl9ST3Qz/by9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TkM1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekkwTHpNMUx6/WXgvTHpNMk1GOUdY/emd5TkRNMS9OakUx/TWw5NWJrUkNNVFJL/L01IRlplamhFUlU1/RFdHOVMvY1RaM1NW/SkNZV3hIU205cy9S/QzVxY0dj" alt="Панир тикка" />
+        <h3>Панир тикка</h3>
+        <p>Пряные кубики обжаренного на гриле творожного сыра, маринованные в йогурте с травами.</p>
+        <p class="price">₹180</p>
+        <button class="add-btn" data-name="Панир тикка" data-price="180" data-img="https://imgs.search.brave.com/4Ix9fBJY6F4Vp6m7t3LHKVx9xIGzfGJe8av_tenBaDs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vRTNTd1Jf/VVVUQjlxdUtwSDB4/aUVwYTdZUXd6U2FM/R2ZUZmVsVl9ST3Qz/by9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TkM1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTRMekkwTHpNMUx6/WXgvTHpNMk1GOUdY/emd5TkRNMS9OakUx/TWw5NWJrUkNNVFJL/L01IRlplamhFUlU1/RFdHOVMvY1RaM1NW/SkNZV3hIU205cy9S/QzVxY0dj">Добавить в корзину</button>
+      </article>
+
+      <article class="menu-card">
+        <img src="https://imgs.search.brave.com/QkPbsEKSPzSkCwQonBe0uoHRfhihBiHUTkQoShVeICM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vRGxodWtU/YXB2NkhLTFpmTk5y/V011LXhqYWtMX1VX/S2k1ZndDMUs4QmFE/OC9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkz/ZDNjdS9kR0Z6ZEdW/dlptaHZiV1V1L1ky/OXRMM2R3TFdOdmJu/UmwvYm5RdmRYQnNi/MkZrY3k4eS9NREU0/THpBeEwwTm9hV05y/L1pXNHRVMkYwWVhs/ZlJWaFEvVTE5VVQw/aGpiMjFmTWpVdy9N/akZmUkZKZk1EWmZN/VGhmL01UZGlMbXB3/Wnc" alt="Куриный сатай" />
+        <h3>Куриный сатай</h3>
+        <p>Маринованная курица на шпажках, обжаренная до совершенства, подаётся с арахисовым соусом.</p>
+        <p class="price">₹220</p>
+        <button class="add-btn" data-name="Куриный сатай" data-price="220" data-img="https://imgs.search.brave.com/QkPbsEKSPzSkCwQonBe0uoHRfhihBiHUTkQoShVeICM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vRGxodWtU/YXB2NkhLTFpmTk5y/V011LXhqYWtMX1VX/S2k1ZndDMUs4QmFE/OC9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkz/ZDNjdS9kR0Z6ZEdW/dlptaHZiV1V1L1ky/OXRMM2R3TFdOdmJu/UmwvYm5RdmRYQnNi/MkZrY3k4eS9NREU0/THpBeEwwTm9hV05y/L1pXNHRVMkYwWVhs/ZlJWaFEvVTE5VVQw/aGpiMjFmTWpVdy9N/akZmUkZKZk1EWmZN/VGhmL01UZGlMbXB3/Wnc">Добавить в корзину</button>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 Restro'Heaven. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <div class="cart-overlay">
+    <div class="cart-modal">
+      <div class="cart-header">
+        <h3>🛒 Ваша корзина</h3>
+        <button class="cart-close" aria-label="Закрыть">✕</button>
+      </div>
+      <div class="cart-items"></div>
+      <p class="cart-empty">Корзина пуста</p>
+      <div class="cart-footer">
+        <p class="cart-total">Итого: <span class="cart-total-price">₹0</span></p>
+        <button class="checkout-btn">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

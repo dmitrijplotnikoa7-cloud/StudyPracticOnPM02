@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Отзывы — Restro'Heaven</title>
+  <script src="auth.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="sticky-nav">
+    <div class="container nav-container">
+      <h1 class="logo">Restro'Heaven</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="starters.html">Закуски</a></li>
+          <li><a href="main-course.html">Основные блюда</a></li>
+          <li><a href="desserts.html">Десерты</a></li>
+          <li><a href="testimonials.html" class="active">Отзывы</a></li>
+        </ul>
+      </nav>
+      <button class="cart-btn" aria-label="Корзина">🛒 <span class="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <section class="testimonials container">
+    <h2>Что говорят наши гости</h2>
+    <article class="testimonial-card">
+      <p>«Баттер чикен просто божественный. Я возвращаюсь снова и снова!»</p>
+      <h4>— Прия Шарма</h4>
+    </article>
+    <article class="testimonial-card">
+      <p>«Потрясающая атмосфера и приветливый персонал. Десерты обязательно стоит попробовать!»</p>
+      <h4>— Радж Патель</h4>
+    </article>
+    <article class="testimonial-card">
+      <p>«Панир тикка в Restro'Heaven — лучший в городе. Очень рекомендую.»</p>
+      <h4>— Анджали Мехта</h4>
+    </article>
+    <article class="testimonial-card">
+      <p>«Идеальное сочетание вкусов и подачи. Шоколадный лавовый торт — просто райский!»</p>
+      <h4>— Викрам Сингх</h4>
+    </article>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Restro'Heaven. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <div class="cart-overlay">
+    <div class="cart-modal">
+      <div class="cart-header">
+        <h3>🛒 Ваша корзина</h3>
+        <button class="cart-close" aria-label="Закрыть">✕</button>
+      </div>
+      <div class="cart-items"></div>
+      <p class="cart-empty">Корзина пуста</p>
+      <div class="cart-footer">
+        <p class="cart-total">Итого: <span class="cart-total-price">₹0</span></p>
+        <button class="checkout-btn">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

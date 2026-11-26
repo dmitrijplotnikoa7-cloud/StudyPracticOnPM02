@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restro'Heaven — Вкус рая в каждом кусочке</title>
+  <script src="auth.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="sticky-nav">
+    <div class="container nav-container">
+      <h1 class="logo">Restro'Heaven</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html" class="active">Главная</a></li>
+          <li><a href="starters.html">Закуски</a></li>
+          <li><a href="main-course.html">Основные блюда</a></li>
+          <li><a href="desserts.html">Десерты</a></li>
+          <li><a href="testimonials.html">Отзывы</a></li>
+        </ul>
+      </nav>
+      <button class="cart-btn" aria-label="Корзина">🛒 <span class="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Добро пожаловать в Restro'Heaven</h2>
+      <p class="tagline">Вкус рая в каждом кусочке</p>
+      <a href="starters.html" class="btn-primary">Посмотреть наше меню</a>
+    </div>
+  </section>
+
+  <section class="intro container">
+    <h3>О Restro'Heaven</h3>
+    <p>
+      В Restro'Heaven мы предлагаем вам лучшие вкусы, созданные с любовью и
+      точностью. От свежайших закусок до райских десертов — каждое блюдо
+      является шедевром. Наслаждайтесь светлой, гостеприимной атмосферой и
+      обслуживанием, которое ощущается как дома.
+    </p>
+  </section>
+
+  <section class="location-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">📍 Наше местоположение</h2>
+      <div class="location-info">
+        <div class="location-text">
+          <p><strong>Restro'Heaven</strong></p>
+          <p>123 MG Road, Черчгейт</p>
+          <p>Мумбаи, Махараштра, Индия</p>
+          <p><strong>Телефон:</strong> +91 12345 67890</p>
+          <p><strong>Эл. почта:</strong> contact@restroheaven.in</p>
+        </div>
+        <div class="location-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609992967!2d72.74109826310986!3d19.082197839261297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63f1b3f1bff%3A0x9c2766bb5e98f82a!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1687402173344!5m2!1sen!2sin"
+            width="100%"
+            height="250"
+            style="border:0; border-radius: 12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 Restro'Heaven. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <div class="cart-overlay">
+    <div class="cart-modal">
+      <div class="cart-header">
+        <h3>🛒 Ваша корзина</h3>
+        <button class="cart-close" aria-label="Закрыть">✕</button>
+      </div>
+      <div class="cart-items"></div>
+      <p class="cart-empty">Корзина пуста</p>
+      <div class="cart-footer">
+        <p class="cart-total">Итого: <span class="cart-total-price">₹0</span></p>
+        <button class="checkout-btn">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

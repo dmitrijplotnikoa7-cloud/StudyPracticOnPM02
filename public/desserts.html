@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Десерты — Restro'Heaven</title>
+  <script src="auth.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="sticky-nav">
+    <div class="container nav-container">
+      <h1 class="logo">Restro'Heaven</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="starters.html">Закуски</a></li>
+          <li><a href="main-course.html">Основные блюда</a></li>
+          <li><a href="desserts.html" class="active">Десерты</a></li>
+          <li><a href="testimonials.html">Отзывы</a></li>
+        </ul>
+      </nav>
+      <button class="cart-btn" aria-label="Корзина">🛒 <span class="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <section class="menu-section container">
+    <h2>Десерты</h2>
+    <div class="menu-items">
+
+      <article class="menu-card">
+        <img src="https://imgs.search.brave.com/kW521BhZHriB0BasYWq0jq8wl7L2WXJ8BAS12yw3Jzs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vRmRhR0I4/MUdmc2N4R3JLVmJR/T0d2d2swemR0YTJx/ZXFtRHRHMTVjdEZ3/TS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkz/ZDNjdS9jbVZqYVhC/bGRHbHVaV0YwL2N5/NWpiMjB2ZEdGamFI/bHYvYmk4eU1ESXhM/ekF5TDBOby9iMk52/YkdGMFpTMU1ZWFpo/L0xVTmhhMlZmTWk1/cWNHYw" alt="Шоколадный лавовый торт" />
+        <h3>Шоколадный лавовый торт <span class="badge">Выбор шефа</span></h3>
+        <p>Тёплый шоколадный торт с жидкой начинкой внутри, подаётся с ванильным мороженым.</p>
+        <p class="price">₹200</p>
+        <button class="add-btn" data-name="Шоколадный лавовый торт" data-price="200" data-img="https://imgs.search.brave.com/kW521BhZHriB0BasYWq0jq8wl7L2WXJ8BAS12yw3Jzs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vRmRhR0I4/MUdmc2N4R3JLVmJR/T0d2d2swemR0YTJx/ZXFtRHRHMTVjdEZ3/TS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkz/ZDNjdS9jbVZqYVhC/bGRHbHVaV0YwL2N5/NWpiMjB2ZEdGamFI/bHYvYmk4eU1ESXhM/ekF5TDBOby9iMk52/YkdGMFpTMU1ZWFpo/L0xVTmhhMlZmTWk1/cWNHYw">Добавить в корзину</button>
+      </article>
+
+      <article class="menu-card">
+        <img src="https://imgs.search.brave.com/T6whRYPvo-09iillgqiI3Ozv36YhNb_mA08mzz4kN7I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vZjV3a01X/U2U4UDhOSmFQT0ow/MjdDdG9Mbk1SLXR4/dk9LVWZxTXBYYUx5/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTVMelU1THpReEx6/YzIvTHpNMk1GOUdY/emsxT1RReC9Oell6/TTE5RGQxaEViemhO/L2NqbG1ialJEVlZO/bU9FODUvVkVRMWMw/RkhVVUZsTkZZeC9l/QzVxY0dj" alt="Гулаб джамун" />
+        <h3>Гулаб джамун</h3>
+        <p>Традиционные индийские сладкие шарики, пропитанные сиропом с ароматом розы.</p>
+        <p class="price">₹150</p>
+        <button class="add-btn" data-name="Гулаб джамун" data-price="150" data-img="https://imgs.search.brave.com/T6whRYPvo-09iillgqiI3Ozv36YhNb_mA08mzz4kN7I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vZjV3a01X/U2U4UDhOSmFQT0ow/MjdDdG9Mbk1SLXR4/dk9LVWZxTXBYYUx5/VS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkw/TXk1bS9kR05rYmk1/dVpYUXZhbkJuL0x6/QTVMelU1THpReEx6/YzIvTHpNMk1GOUdY/emsxT1RReC9Oell6/TTE5RGQxaEViemhO/L2NqbG1ialJEVlZO/bU9FODUvVkVRMWMw/RkhVVUZsTkZZeC9l/QzVxY0dj">Добавить в корзину</button>
+      </article>
+
+      <article class="menu-card">
+        <img src="https://imgs.search.brave.com/AIfQOKmsmUtr_MFkKKWro6pMaEusQPp3FR3tubT6pc0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNU1vM1Ju/VlJDN2xUNzVHazA1/VlNHRHNSX2FrTUtR/LXNYVkg3VDhrdUtQ/OC9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk9U/QTFMelU1THpReEx6/YzIvTHpNMk1GOUdY/emsxT1RReC9Oell6/TTE5RGQxaEViemhO/L2NqbG1ialJEVlZO/bU9FODUvVkVRMWMw/RkhVVUZsTkZZeC9l/QzVxY0dj" alt="Манговый мусс" />
+        <h3>Манговый мусс</h3>
+        <p>Лёгкий и сливочный десерт со вкусом манго, украшенный взбитыми сливками.</p>
+        <p class="price">₹180</p>
+        <button class="add-btn" data-name="Манговый мусс" data-price="180" data-img="https://imgs.search.brave.com/AIfQOKmsmUtr_MFkKKWro6pMaEusQPp3FR3tubT6pc0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNU1vM1Ju/VlJDN2xUNzVHazA1/VlNHRHNSX2FrTUtR/LXNYVkg3VDhrdUtQ/OC9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVwYzNS/dlkydHdhRzkwL2J5/NWpiMjB2YVdRdk9U/QTFMelU1THpReEx6/YzIvTHpNMk1GOUdY/emsxT1RReC9Oell6/TTE5RGQxaEViemhO/L2NqbG1ialJEVlZO/bU9FODUvVkVRMWMw/RkhVVUZsTkZZeC9l/QzVxY0dj">Добавить в корзину</button>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 Restro'Heaven. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <div class="cart-overlay">
+    <div class="cart-modal">
+      <div class="cart-header">
+        <h3>🛒 Ваша корзина</h3>
+        <button class="cart-close" aria-label="Закрыть">✕</button>
+      </div>
+      <div class="cart-items"></div>
+      <p class="cart-empty">Корзина пуста</p>
+      <div class="cart-footer">
+        <p class="cart-total">Итого: <span class="cart-total-price">₹0</span></p>
+        <button class="checkout-btn">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

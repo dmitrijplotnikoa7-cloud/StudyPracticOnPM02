@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Вход — Restro'Heaven</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="sticky-nav">
+    <div class="container nav-container">
+      <h1 class="logo">Restro'Heaven</h1>
+    </div>
+  </header>
+
+  <main class="login-page">
+    <div class="login-card">
+      <h2>Вход в Restro'Heaven</h2>
+
+      <div class="login-tabs">
+        <button class="tab active" data-tab="login" type="button">Вход</button>
+        <button class="tab" data-tab="register" type="button">Регистрация</button>
+      </div>
+
+      <form id="login-form" class="auth-form">
+        <input type="text" id="login-name" placeholder="Логин или email" required autocomplete="username" />
+        <input type="password" id="login-pass" placeholder="Пароль" required autocomplete="current-password" />
+        <label class="remember"><input type="checkbox" id="login-remember" /> Запомнить меня</label>
+        <p class="auth-error" id="login-error"></p>
+        <button type="submit" class="auth-btn">Войти</button>
+        <p class="auth-back"><a href="/changePassword">Забыли пароль?</a></p>
+      </form>
+
+      <form id="register-form" class="auth-form hidden">
+        <input type="text" id="reg-name" placeholder="Логин" required autocomplete="username" />
+        <input type="email" id="reg-email" placeholder="Email" required autocomplete="email" />
+        <input type="password" id="reg-pass" placeholder="Пароль" required autocomplete="new-password" />
+        <input type="password" id="reg-pass2" placeholder="Повторите пароль" required autocomplete="new-password" />
+        <p class="auth-error" id="reg-error"></p>
+        <button type="submit" class="auth-btn">Зарегистрироваться</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>

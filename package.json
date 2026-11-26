@@ -1,0 +1,32 @@
+{
+  "name": "restaurant_sample_site.github.io-main",
+  "version": "1.0.0",
+  "description": "NOTE -> the images are from web, these arent downloaded locally, so if you cant see any images then it means the images has been took down from the web and please do change the images according to you yourself.",
+  "homepage": "https://github.com/dmitrijplotnikoa7-cloud/StudyPracticOnPM02#readme",
+  "bugs": {
+    "url": "https://github.com/dmitrijplotnikoa7-cloud/StudyPracticOnPM02/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitrijplotnikoa7-cloud/StudyPracticOnPM02.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "crypto": "^1.0.1",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6",
+    "nodemailer": "^10.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
